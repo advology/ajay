@@ -1,0 +1,87 @@
+.section
+    padding: 60px 0
+.Service-SecC
+    .container
+        .flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 30px
+            .col
+                flex: 0 1 50%
+                max-width: 50%
+                width: 100%
+                h3
+                    margin-bottom: 20px
+                
+.Service-SecD
+    .container
+        .sub-service-box
+            display: flex
+            align-items: center
+            justify-content: space-between
+            &:not(:first-child)
+                margin: 60px 0
+            &:nth-child(odd)
+                .col
+                    &:first-child
+                        order: 2
+                    &:last-child
+                        order: 1
+            .col
+                flex: 0 1 48%
+                max-width: 48%
+                width: 100%
+                h3
+                    margin-bottom: 20px
+                    font-weight: 600
+                
+#myForm
+    // margin: 150px auto  80px                  
+
+.Contact-SecA
+    padding: 60px 0
+    .container
+        .flex
+            width: 100%
+            .col
+                flex: 0 1 50%
+                max-width: 50%
+                width: 100%
+                h2
+                    font-weight: 600
+                    position: relative
+                    padding-bottom: 15px 
+                    &::before
+                        content: ""
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        width: 150px
+                        background: black
+                        height: 2px
+                p
+                    margin-top: 15px
+                .contact-style
+                    color: black
+                    display: inline-block
+                    margin: 20px 0
+                    &:hover
+                        color: #B10007
+                .maildiv
+                    p
+                        font-weight: 600
+                        margin-bottom: 10px
+                    a
+                        display: inline-block
+                        color: black
+                        &:hover
+                            color: #B10007
+.cta-service
+    background: linear-gradient(180deg, #FF3E43 0%, #B10007 100%) 0% 0%
+    color: #fff
+    padding: 8px 30px
+    border-radius: 5px
+    font-size: 16px
+    font-weight: 200
+    display: inline-block
+    margin-top: 30px

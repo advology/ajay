@@ -1,0 +1,57 @@
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: block;
+  }
+  
+  /* Mobile Menu */
+  .Model_Video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .Model_Video .close_model {
+    font-size: 2rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  .Model_Video .modelBody ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .Model_Video .modelBody li {
+    margin: 10px 0;
+  }
+  
+  .Model_Video .modelBody a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+  }
+  
+  .Model_Video .modelBody a:hover {
+    color: #007bff;
+  }
+  
+  .Model_Video.active {
+    transform: translateX(0);
+  }
+  

@@ -1,0 +1,138 @@
+.Herovideo
+    overflow: hidden
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background: #00000091
+    figure
+        img
+            width: 100%
+    .content
+        content: ""
+        position: absolute
+        top: 70%
+        left: 50%
+        width: 1230px
+        transform: translate(-50%, -70%)
+        text-align: left
+        h2
+            color: $White
+            font-weight: 600
+        p
+            color: $White
+            margin-top: 30px
+        a
+            background: linear-gradient(90deg, #7d1873 0%, #af2051 33.4%, #da3f41 67.80000000000001%, #f0704a 100%)
+            padding: 5px 30px
+            display: inline-block
+            margin-top: 40px
+            border: 1px solid $White
+            color: $White
+    
+.Hammodelpop
+    position: fixed
+    right: 0
+    top: 0
+    bottom: 0
+    background: linear-gradient(217deg, black, #fff)
+    width: 380px
+    transform: translateX(100%)
+    transition: 0.5s ease
+    padding: 40px
+    z-index: 999
+    &.is-open
+        transform: translateX(0%)
+    .close-model
+        img
+            filter: invert(1)
+    .model-body
+        text-align: left
+        ul
+            margin-top: 50px
+            li
+                margin: 20px 0
+                a
+                    font-size: 30px
+                    font-weight: 500
+                    color: $Black
+                    transition: .3s ease
+                    &:hover
+                        letter-spacing: 1px
+                        color: #FF161C
+
+.FormPop
+    position: fixed
+    right: 0
+    left: 0
+    top: 0
+    bottom: 0
+    background: #f1f0ee
+    width: 100%
+    height: 100%
+    transform: translateX(100%)
+    transition: 0.5s ease
+    padding: 40px
+    z-index: 999
+    margin: auto
+    &.is-open
+        transform: translateX(0%)
+    .model-body
+        text-align: left
+        .container
+            figure
+                img
+                    filter: invert(1)
+            .flex
+                margin-top: 60px
+                justify-content: space-between
+                .col
+                    width: 100%
+                    &:first-child
+                        flex: 0 1 53%
+                        max-width: 53%
+                        figure
+                            img
+                                filter: invert(0)
+                        p
+                            margin: 30px 0
+
+                    &:last-child
+                        flex: 0 1 30%
+                        max-width: 30%
+                        margin: auto
+                        p
+                            margin: 8px 0
+                            &.mt-20
+                                margin-top: 20px
+                        .contact-info
+                            margin-top: 20px
+                            a
+                                margin: 10px 0
+                                color: #da3f41
+                                display: block
+                                h3
+                                    color: #da3f41
+
+.AboutSecA
+    .container
+        .flex
+            align-items: center
+            margin-top: 30px
+            .col
+                flex: 0 1 49%
+                max-width: 49%
+                width: 100%
+                p
+                    &:not(:first-child)
+                        margin-top: 30px
+        .disc2
+            margin-top: 30px
+            h3
+                margin-bottom: 20px
+                font-weight: 600
+                        

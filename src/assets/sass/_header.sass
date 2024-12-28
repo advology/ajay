@@ -1,0 +1,174 @@
+header
+    content: ""
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    background: black
+    z-index: 99
+    .header-wrapper
+        padding: 10px 0
+        .flex
+            justify-content: space-between
+            align-items: center
+    nav
+        ul 
+            display: flex
+            align-items: center
+            justify-content: center
+            >li
+                color: $White
+                padding: 10px 30px
+                cursor: pointer
+                a
+                    color: $White
+                    display: flex
+                    align-items: center
+                    &.active
+                        color: #B10007
+                    svg
+                        margin-right: 5px
+                &.NavdropDown
+                    position: relative
+                    &:hover
+                        .DropdownMenu
+                            visibility: visible
+                            opacity: 1
+                            margin-top: 0
+                            z-index: 9
+                    .DropdownMenu
+                        content: ""
+                        position: absolute
+                        text-align: left
+                        top: 100%
+                        left: 0
+                        display: block
+                        background-color: #fff
+                        visibility: hidden
+                        min-width: 230px
+                        width: -moz-max-content
+                        width: max-content
+                        padding: 7px
+                        left: -14px
+                        margin-top: 50px
+                        opacity: 0
+                        z-index: -1
+                        border-bottom: 3px solid #B10007
+                        box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.09), 0px 3px 0px 0px rgba(231, 13, 60, 0.004)
+                        transform-origin: top center
+                        transition: margin-top 0.4s ease-in-out 0s, visibility 0.4s ease-in-out 0s, opacity 0.4s ease-in-out 0s, z-index 0s
+                        >ul
+                            display: block
+                            li
+                                margin: 5px 0
+                                padding: 0 20px
+                                a
+                                    color: $Black
+                                    transition: .2s ease
+                                    &:hover
+                                        color: #B10007
+                                        letter-spacing: 1px
+
+footer
+    padding: 50px 0 30px
+    background: #000
+    .container
+        .grid-flex
+            display: flex
+            gap: 20px
+            justify-content: space-between
+            .box
+                width: 100%
+                flex: 0 1 30%
+                max-width: 30%
+                figure
+                    margin-bottom: 30px
+                p, h5, a
+                    color: $White
+                h5
+                    margin: 30px 0 20px
+                    color: #B10007
+                ul
+                    li
+                        margin: 10px 0
+                        display: flex
+                        align-items: center
+                        a
+                            display: block
+                ul.contact-detail
+                    >li
+                        position: relative
+                        padding-left: 25px
+                        a
+                            svg
+                                content: ""
+                                position: absolute
+                                top: 0
+                                left: 0
+                            span
+                                color: #B10007
+                                font-weight: 500
+.whatsapp-icon 
+    font-size: 53px
+    position: fixed
+    left: 15px
+    bottom: 15px
+    z-index: 996
+    border-radius: 50%
+    color: white
+    background: #4ba558
+    width: 50px
+    height: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    svg 
+        width: 40px
+        height: 40px
+        color: #fff
+.sticky-container
+    padding: 0px
+    margin: 0px
+    position: fixed
+    right: -160px
+    top: 380px
+    width: 200px
+    z-index: 1100
+    ul.floating-sidebar-sec 
+        li 
+            width: 350px
+            list-style-type: none
+            background: linear-gradient(180deg, #FF3E43 0%, #B10007 100%) 0% 0%
+            color: #ffffff
+            height: 43px
+            padding: 0px
+            margin: 0px 0px 1px 0px
+            border-bottom-left-radius: 30px
+            border-top-left-radius: 30px
+            -webkit-transition: all 0.25s ease-in-out
+            -moz-transition: all 0.25s ease-in-out
+            -o-transition: all 0.25s ease-in-out
+            transition: all 0.25s ease-in-out
+            cursor: pointer
+            &:hover
+                margin-left: -150px
+            p
+                padding-top: 5px
+                color: #fff
+                padding-top: 10px
+                margin: 0px
+                line-height: 16px
+                font-size: 11px
+                display: flex
+                align-items: center
+                span
+                    top: 0px
+                    position: relative
+                    padding: 0px 15px
+                    font-size: 20px
+                a
+                    font-size: 16px
+                    line-height: 0
+                    text-decoration: none
+                    color: #fff
+                    text-decoration: none
